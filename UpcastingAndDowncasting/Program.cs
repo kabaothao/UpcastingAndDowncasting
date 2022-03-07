@@ -9,19 +9,27 @@ namespace UpcastingAndDowncasting // Note: actual namespace depends on the proje
             {
                 static void Main(string[] args)
                 {
-                    //Text text = new Text();
-                    //Shape shape = text;
+            //Text text = new Text();
+            //Shape shape = text;
 
-                    //text.Width = 200;
-                    //shape.Width = 100;
+            //text.Width = 200;
+            //shape.Width = 100;
 
-                    //Console.WriteLine(text.Width);
+            //Console.WriteLine(text.Width);
 
-                    StreamReader reader =  new StreamReader(args[0]); //note that here we have a few overloads or the constructor of this class. In the framework stream is the base or parent of every kind of a stream.
+            //StreamReader reader =  new StreamReader(args[0]); //note that here we have a few overloads or the constructor of this class. In the framework stream is the base or parent of every kind of a stream.
+
+            //StreamReader reader =  new StreamReader(new MemoryStream()); //So what we can do here is we can simply pass a new file the stream or we can pass a memory stream. So any class that derives from the stream class.
+
+            var list = new ArrrayList();
+            list.Add(1);
+            list.Add("Kay");
+            list.Add(new Text());
+            //we can store different kind of object in every elememt.
 
 
         }
-            }
+    }
 }
 
 
